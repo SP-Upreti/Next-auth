@@ -17,7 +17,7 @@ export default  function login(){
             return;
         }
         try {
-            const res = await fetch('api/register',{
+            const res = await fetch('api/router',{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
@@ -34,7 +34,7 @@ export default  function login(){
                 console.log("user registration failed");
             }
         } catch (error) {
-            
+            console.log("Error-------",error);
         }
     }
 
